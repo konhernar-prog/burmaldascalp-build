@@ -1,0 +1,16 @@
+# Полный набор для сборки ZoVscalpick (совпадает с collect_all в спеке).
+# Кроссплатформенный — ставится и на macOS, и на Windows. БЕЗ pywin32 (Windows-only).
+pyinstaller>=6.6
+PyQt6>=6.6
+aiohttp>=3.9
+websockets>=12.0
+websocket-client>=1.7
+orjson>=3.9
+psutil>=5.9
+requests>=2.31
+protobuf>=4.25
+tzdata>=2024.1
+Brotli>=1.1
+certifi>=2024.2.2
+# остальные (multidict, yarl, frozenlist, aiosignal, propcache, idna,
+# charset-normalizer, attrs) подтягиваются как зависимости aiohttp/requests
